@@ -173,15 +173,15 @@ class MetodoPago(ABC):
 
 class PagoEfectivo(MetodoPago):
     def procesar_pago(self, monto):
-        return f"Pago en efectivo procesado por {monto}."
+        return f"Pago en efectivo procesado por ${monto}."
     
 class PagoTarjeta(MetodoPago):
     def procesar_pago(self, monto):
-        return f"Pago con tarjeta procesado por {monto}."
+        return f"Pago con tarjeta procesado por ${monto}."
 
 class PagoTransferencia(MetodoPago):
     def procesar_pago(self, monto):
-        return f"Pago con transferencia procesado por {monto}."
+        return f"Pago con transferencia procesado por ${monto}."
     
 class Factura:
     def __init__(self, consulta):
@@ -202,7 +202,7 @@ print("\n================ CONSULTA ================\n")
 cliente1 = Cliente("Ana", "12345", "3001234567")
 
 # Crear mascota
-mascota1 = Mascota("Firulais", "Perro", 5, 12)
+mascota1 = Mascota("Paco", "Perro", 5, 12)
 mascota2 = Mascota("Michi", "Gato", 1, 6)
 
 # Asociar mascota al cliente
