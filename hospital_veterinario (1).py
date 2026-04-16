@@ -242,7 +242,7 @@ print("\n================ HOSPITALIZACION ================\n")
 
 # Crear hospitalizacion
 hospitalizacion1 = Hospitalizacion(
-    mascota1,
+    mascota2,
     veterinario1,
     3,
     "Observacion por infeccion y deshidratacion"
